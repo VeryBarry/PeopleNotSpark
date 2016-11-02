@@ -4,21 +4,14 @@ package com.theironyard;
  * Created by VeryBarry on 11/2/16.
  */
 public class Person {
-    int id;
-    String firstName;
-    String lastName;
-    String email;
-    String country;
-    String ip;
+    public int id;
+    public String firstName;
+    public String lastName;
+    public String email;
+    public String country;
+    public String ip;
 
     public Person() {
-    }
-    public Person(String firstName, String lastName, String email, String country, String ip) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.country = country;
-        this.ip = ip;
     }
     public Person(int id, String firstName, String lastName, String email, String country, String ip) {
         this.id = id;
@@ -30,13 +23,7 @@ public class Person {
     }
     @Override
     public String toString() {
-        return "Person{" +
-                "First Name: " + firstName + '\'' +
-                ", Last Name: " + lastName + '\'' +
-                ", Email: " + email + '\'' +
-                ", Country: " + country + '\'' +
-                ", ip: " + ip + '\'' +
-                '}';
+        return firstName + " " + lastName + " from " + country;
     }
     public int getId() {
         return id;
@@ -74,4 +61,5 @@ public class Person {
     public void setIp(String ip) {
         this.ip = ip;
     }
+    
 }
